@@ -1,5 +1,7 @@
+import Signup from "./SignUp";
+
 function App() {
-  return "Hello";
+  return <Signup />;
 }
 
 export default App;
