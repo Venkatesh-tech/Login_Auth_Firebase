@@ -26,6 +26,10 @@ export function AuthProvider({ children }) {
       setLoading(false);
     });
 
+    function logout() {
+      return auth.signOut();
+    }
+
     return unsubscribe;
   }, []);
 
@@ -33,6 +37,7 @@ export function AuthProvider({ children }) {
     currentUser,
     login,
     signup,
+    logout,
   };
 
   return (
