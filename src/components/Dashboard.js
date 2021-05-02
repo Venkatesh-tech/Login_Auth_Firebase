@@ -1,8 +1,17 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 
 function Dashboard() {
-  return <></>;
+  return (
+    <>
+      <Card></Card>
+      <div className="w-100 text-center mt-2">
+        <Button variant="link" onClick={handleLogout}>
+          Log Out
+        </Button>
+      </div>
+    </>
+  );
 }
 
 export default Dashboard;
